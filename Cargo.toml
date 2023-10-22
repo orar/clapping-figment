@@ -1,0 +1,17 @@
+[package]
+name = "clapping-figment"
+version = "0.1.0"
+edition = "2021"
+authors= ["orar"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+clap = { version = "4.3.11", features = ["derive", "env"] }
+env_logger = "0.10.0"
+figment = { version = "0.10.11", features = ["env", "toml", "json"] }
+log = "0.4.20"
+serde = { version = "1.0.189", features = ["derive"] }
+sqlx = { version = "0.7.2", features = ["postgres", "macros", "runtime-tokio-native-tls"] }
+tokio = { version = "1.33.0", features = ["macros", "rt-multi-thread"] }
