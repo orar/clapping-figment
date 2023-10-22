@@ -1,6 +1,6 @@
 use serde::Deserialize;
 
-use figment::{Figment, providers::{Format, Toml, Json, Env}};
+use figment::{Figment, providers::{Format, Toml, Env}};
 
 #[derive(Deserialize, Debug)]
 pub struct AppConfig {

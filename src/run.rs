@@ -4,7 +4,7 @@ use crate::cli::{Add, Done};
 use crate::config::{AppConfig};
 use crate::todo::Todos;
 
-pub async fn app(args: Args, config: &AppConfig, pool: &PgPool) -> anyhow::Result<()> {
+pub async fn app(args: Args, _config: &AppConfig, pool: &PgPool) -> anyhow::Result<()> {
     match args {
         Args::Add(Add { description }) => {
             println!("Adding new todo with description '{description}'");
